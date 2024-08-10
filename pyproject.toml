@@ -1,6 +1,6 @@
 [project]
 name = "nonebot-plugin-alist"
-version = "1.0.0"
+version = "1.0.1"
 description = "一个支持Alist多账号管理的NoneBot插件"
 authors = [
     { name = "iam57", email = "me@iam57.com" },
@@ -13,7 +13,7 @@ dependencies = [
     "aiosqlite>=0.17.0",
     "nonebot-plugin-alconna>=0.51.1",
 ]
-requires-python = ">=3.10, <3.12"
+requires-python = ">=3.10, <3.13"
 readme = "README.md"
 license = { text = "MIT" }
 
