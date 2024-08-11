@@ -93,8 +93,8 @@ _✨ 一个支持多账号的 Alist 管理的 NoneBot 插件 ✨_
 |       alist ls        | 所有 |  否  | 私聊、群聊 |  列出当前目录的文件, 支持分页显示   |
 |       alist me        | 所有 |  否  | 私聊、群聊 |  显示当前登录的Alist账户的信息   |
 |       alist pwd       | 所有 |  否  | 私聊、群聊 |     显示当前所在目录的路径      |
-|     alist relogin     | 所有 |  否  |  群聊   |  重新登录一个添加过的Alist账户   |
-|   alist account add   | 所有 |  否  |  群聊   | 添加一个新的Alist账户并切换到该账户 |
+|     alist relogin     | 所有 |  否  |  私聊   |  重新登录一个添加过的Alist账户   |
+|   alist account add   | 所有 |  否  |  私聊   | 添加一个新的Alist账户并切换到该账户 |
 |   alist account del   | 所有 |  否  | 私聊、群聊 |   删除一个已存在的Alist账户    |
 |  alist account info   | 所有 |  否  | 私聊、群聊 |   显示当前Alist账户的详细信息   |
 |  alist account list   | 所有 |  否  | 私聊、群聊 |   列出所有已添加的Alist账户    |
