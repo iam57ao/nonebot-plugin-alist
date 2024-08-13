@@ -6,7 +6,9 @@ from tortoise.models import Model
 
 class AlistAccount(Model):
     account_id = fields.IntField(pk=True)
-    user = fields.ForeignKeyField('models.User', related_name='alist_accounts', on_delete=fields.CASCADE)
+    user = fields.ForeignKeyField(
+        "models.User", related_name="alist_accounts", on_delete=fields.CASCADE
+    )
     site_url = fields.TextField()
     site_username = fields.TextField()
     token = fields.TextField(null=True)

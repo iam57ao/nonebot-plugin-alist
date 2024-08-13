@@ -13,10 +13,8 @@ async def db_connect():
     if not os.path.exists("alist"):
         os.mkdir("alist")
     await Tortoise.init(
-        db_url='sqlite://alist/data.db',
-        modules={
-            'models': [AlistAccount.__module__, User.__module__]
-        }
+        db_url="sqlite://alist/data.db",
+        modules={"models": [AlistAccount.__module__, User.__module__]},
     )
     await Tortoise.generate_schemas()
 

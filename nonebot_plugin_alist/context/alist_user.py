@@ -1,7 +1,8 @@
 from typing import Dict, Optional
+
 from pydantic import BaseModel, ConfigDict
 
-from ..enum import DeletePolicy, DownloadTool
+from ..enum.offline_download import DeletePolicy, DownloadTool
 from ..models import User
 
 

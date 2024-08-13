@@ -1,9 +1,9 @@
 from nonebot.adapters import Event
 from nonebot_plugin_alconna import At
 
-from ..alist_cmd import alist_cmd
-from ...message import account_list_msg
+from ...message.account import account_list_msg
 from ...models import User
+from ..alist_commands import alist_cmd
 
 account_list_cmd = alist_cmd.dispatch("account.list")
 
@@ -17,7 +17,7 @@ async def _(event: Event):
     else:
         alist_accounts = []
     await account_list_cmd.finish(
-        At("user", event.get_user_id()) +
-        f"【Alist】我的账户:\n" +
-        account_list_msg(alist_accounts)
+        At("user", event.get_user_id())
+        + "【Alist】我的账户:\n"
+        + account_list_msg(alist_accounts)
     )

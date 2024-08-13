@@ -2,16 +2,13 @@ from httpx import AsyncClient
 from nonebot import get_plugin_config
 
 from .config import Config
-from .context import AlistUser
+from .context.alist_user import AlistUser
 
 plugin_config = get_plugin_config(Config)
 
 
 def async_client(site_url: str) -> AsyncClient:
-    return AsyncClient(
-        base_url=site_url,
-        timeout=plugin_config.alist_request_timeout,
-    )
+    return AsyncClient(base_url=site_url, timeout=plugin_config.alist_request_timeout)
 
 
 async def authenticated_client(alist_user: AlistUser) -> AsyncClient:
