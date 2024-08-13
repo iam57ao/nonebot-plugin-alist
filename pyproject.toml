@@ -12,6 +12,7 @@ dependencies = [
     "tortoise-orm[aiosqlite]>=0.21.5",
     "aiosqlite>=0.17.0",
     "nonebot-plugin-alconna>=0.51.1",
+    "ruff>=0.5.7",
 ]
 requires-python = ">=3.10, <3.13"
 readme = "README.md"
