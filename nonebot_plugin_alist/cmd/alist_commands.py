@@ -14,6 +14,7 @@ alist_cmd = on_alconna(
             ),
             Subcommand("cancel", Args["tid#任务ID", str], help_text="取消一个下载任务"),
             Subcommand("list", help_text="列出所有下载链接"),
+            Subcommand("tool", help_text="设置下载工具"),
             help_text="Alist离线下载的操作",
         ),
         Subcommand("help", help_text="显示所有可用命令的帮助信息"),
