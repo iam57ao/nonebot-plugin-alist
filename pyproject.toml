@@ -1,6 +1,6 @@
 [project]
 name = "nonebot-plugin-alist"
-version = "1.1.0"
+version = "1.1.1"
 description = "一个支持Alist多账号管理的NoneBot插件"
 authors = [
     { name = "iam57", email = "me@iam57.com" },
