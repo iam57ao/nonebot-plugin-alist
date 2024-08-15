@@ -14,7 +14,7 @@ _✨ 一个支持多账号的 Alist 管理的 NoneBot 插件 ✨_
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/iam57ao/nonebot-plugin-alist.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot-plugin-template">
+<a href="https://pypi.python.org/pypi/nonebot-plugin-alist">
     <img src="https://img.shields.io/pypi/v/nonebot-plugin-alist.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="python">
