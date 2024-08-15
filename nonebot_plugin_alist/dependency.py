@@ -1,3 +1,4 @@
+from httpx import TransportError
 from nonebot.adapters import Event
 from nonebot_plugin_alconna import AlconnaMatcher, At
 
@@ -12,7 +13,10 @@ async def get_alist_user(matcher: AlconnaMatcher, event: Event) -> AlistUser:
     alist_user = await AlistUserManager.get_by_user_id(user_id)
     if not alist_user:
         await matcher.finish(At("user", user_id) + "【Alist】您未登录任何账号!")
-    resp_body = await me(alist_user)
+    try:
+        resp_body = await me(alist_user)
+    except TransportError:
+        await matcher.finish(At("user", user_id) + "请求错误!")
     if resp_body["code"] == 401:
         await matcher.send(At("user", user_id) + "【Alist】登录失效!")
         main_account = await logout_and_switch_main_account(alist_user)
