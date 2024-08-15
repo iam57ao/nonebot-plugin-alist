@@ -88,6 +88,8 @@ _✨ 一个支持多账号的 Alist 管理的 NoneBot 插件 ✨_
 |  alist download add   | 所有 |  否  | 私聊、群聊 |     添加一条或多条下载链接      |
 | alist download cancel | 所有 |  否  | 私聊、群聊 |       取消一个下载任务       |
 |  alist download list  | 所有 |  否  | 私聊、群聊 |       列出所有下载链接       |
+| alist download policy | 所有 |  否  | 私聊、群聊 |        修改删除策略        |
+|  alist download tool  | 所有 |  否  | 私聊、群聊 |        设置下载工具        |
 |      alist help       | 所有 |  否  | 私聊、群聊 |    显示所有可用命令的帮助信息     |
 |     alist logout      | 所有 |  否  | 私聊、群聊 |    退出当前登录的Alist账户    |
 |       alist ls        | 所有 |  否  | 私聊、群聊 |  列出当前目录的文件, 支持分页显示   |
